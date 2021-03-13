@@ -11,6 +11,9 @@ build:
 run:
 	docker-compose up -d
 
+stop:
+	docker-compose down
+
 db-migrate:
 	docker-compose exec web flask db migrate
 
