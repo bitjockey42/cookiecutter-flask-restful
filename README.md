@@ -69,7 +69,7 @@ Starting a new project is as easy as running this command at the command line. N
 
 To create a project run the following command and follow the prompt
 
-`cookiecutter https://github.com/karec/cookiecutter-flask-restful`
+`cookiecutter https://github.com/bitjockey42/cookiecutter-flask-restful-postgres`
 
 #### Install project requirements
 
