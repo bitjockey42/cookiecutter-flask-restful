@@ -1,6 +1,6 @@
-# cookiecutter-flask-restful
+# cookiecutter-flask-restful-postgres
 
-Cookiecutter template for flask restful, including blueprints, application factory, and more
+Cookiecutter template for flask restful, including blueprints, application factory, and more.
 
 [![Build Status](https://travis-ci.org/karec/cookiecutter-flask-restful.svg?branch=master)](https://travis-ci.org/karec/cookiecutter-flask-restful)
 
@@ -20,6 +20,7 @@ Features
 * Unit tests using pytest and factoryboy
 * Configuration using environment variables
 * OpenAPI json file and swagger UI
+* PostgreSQL support
 
 Used packages :
 
@@ -36,6 +37,7 @@ Used packages :
 * [factoryboy](http://factoryboy.readthedocs.io/en/latest/)
 * [dotenv](https://github.com/theskumar/python-dotenv)
 * [apispec](https://github.com/marshmallow-code/apispec)
+* [psycopg2](https://github.com/psycopg/psycopg2)
 
 
 ## Usage
@@ -106,7 +108,7 @@ It's filled by default with following content:
 FLASK_ENV=development
 FLASK_APP="myapp.app:create_app"
 SECRET_KEY=changeme
-DATABASE_URI="sqlite:////tmp/myapp.db"
+DATABASE_URI=postgresql://myapp_user:myapp_db_pw@db/myapp_db
 CELERY_BROKER_URL=amqp://guest:guest@localhost/  # only present when celery is enabled
 CELERY_RESULT_BACKEND_URL=amqp://guest:guest@localhost/  # only present when celery is enabled
 ```
