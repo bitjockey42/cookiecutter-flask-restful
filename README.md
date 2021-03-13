@@ -430,6 +430,10 @@ This come with a very simple extension that allow you to override basic settings
 
 ## Changelog
 
+### 12/03/2021 (fork)
+
+* Added support for dockerized postgres
+
 ### 6/08/2020
 
 * Updated README for tests and celery
