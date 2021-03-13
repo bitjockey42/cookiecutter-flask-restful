@@ -42,6 +42,10 @@ services:
       {% endif %}
     ports:
       - "5000:5000"
+{%- if cookiecutter.use_postgres == "yes" %}
+    depends_on:
+      - db
+{% endif %}
 {%- if cookiecutter.use_celery == "yes" %}
   rabbitmq:
     image: rabbitmq
