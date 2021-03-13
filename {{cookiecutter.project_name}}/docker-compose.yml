@@ -64,4 +64,4 @@ services:
 {% if cookiecutter.use_postgres == "yes" %}
 volumes:
   db_data:
-{% end %}
+{% endif %}
